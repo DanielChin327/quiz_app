@@ -9,9 +9,9 @@ const questions = [
       ]
   },
   {
-    question: "Which is largest animal in the world? ",
+    question: "Which is large animal in the world? ",
     answers: [
-      {text: "Shark", correct: false},
+      {text: "A", correct: false},
       {text: "Blue Whale", correct: true},
       {text: "Elephant", correct: false},
       {text: "Giraffe", correct: false},
@@ -20,16 +20,16 @@ const questions = [
   {
     question: "Which is largest animal in the world? ",
     answers: [
-      {text: "Shark", correct: false},
+      {text: "D", correct: false},
       {text: "Blue Whale", correct: true},
       {text: "Elephant", correct: false},
       {text: "Giraffe", correct: false},
     ]
   },
   {
-    question: "Which is largest animal in the world? ",
+    question: "Which is large animal in the world? ",
     answers: [
-      {text: "Shark", correct: false},
+      {text: "C", correct: false},
       {text: "Blue Whale", correct: true},
       {text: "Elephant", correct: false},
       {text: "Giraffe", correct: false},
@@ -38,7 +38,7 @@ const questions = [
 ];
 
 const questionElement = document.querySelector("#question");
-const answerButton = document.querySelector("#answer-buttons");
+const answerButtons = document.querySelector("#answer-buttons");
 const nextButton = document.querySelector("#next-btn");
 
 let currentQuestionIndex = 0;
@@ -52,8 +52,26 @@ function startQuiz() {
 }
 
 function showQuestion() {
+  resetState();
   let currentQuestion = questions[currentQuestionIndex];
   let questionNo =currentQuestionIndex + 1;
-  questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
+  questionElement.innerHTML = questionNo + ". " + currentQuestion.question; //Grabs the value of question with provided questions[index]
 
+  currentQuestion.answers.forEach(answer => {
+    const button = document.createElement('button');
+    button.innerHTML = answer.text;
+    button.classList.add("btn");
+    answerButtons.appendChild(button);
+  });
 }
+
+function resetState() {
+  nextButton.style.display = "none";
+  while(answerButtons.firstChild) {
+    answerButtons.removeChild(answerButtons.firstChild);
+
+  }
+}
+
+
+startQuiz();

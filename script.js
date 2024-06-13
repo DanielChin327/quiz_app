@@ -39,6 +39,26 @@ const questions = [
       ]
   },
 
+
+  {
+    question: "What is Japan's largest island? ",
+    answers: [
+      {text: "Kyushu", correct: false},
+      {text: "Shikoku", correct: false},
+      {text: "Honshu", correct: true},
+      {text: "Hokkaido", correct: false},
+    ]
+},
+  {
+    question: "What is Japanese miso soup's main ingredient?  ",
+    answers: [
+      {text: "Rice", correct: false},
+      {text: "Soybean", correct: true},
+      {text: "Wheat", correct: false},
+      {text: "Barley", correct: false},
+    ]
+},
+
   {
     question: "Which of the following is not a Japanese alphabet system? ",
     answers: [
@@ -143,9 +163,9 @@ const questions = [
     question: "Which of the following is a native religion that did not begin from mainland Asia? ",
     answers: [
       {text: "Confucianism", correct: false},
-      {text: "Shinto", correct: true},
-      {text: "Zen", correct: false},
-      {text: "Bushido", correct: false},
+      {text: "Shintoism", correct: true},
+      {text: "Zen Buddhism", correct: false},
+      {text: "Daoism", correct: false},
     ]
   },
 

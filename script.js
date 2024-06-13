@@ -20,6 +20,17 @@ const questions = [
   },
 
   {
+    question: "What nickname does Japan give itself as a nation? ",
+    answers: [
+      {text: "The Island of Warriors", correct: false},
+      {text: "The Middle Kingdom", correct: false},
+      {text: "Land of the Rising Sun", correct: true},
+      {text: "Land of the Morning Calm", correct: false},
+    ]
+  },
+
+
+  {
     question: "Which of the following is not a noodle dish?  ",
     answers: [
       {text: "Yakitori", correct: true},
@@ -49,6 +60,19 @@ const questions = [
       {text: "Hokkaido", correct: false},
     ]
 },
+
+
+{
+  question: "What does sushi mean in Japanese?  ",
+  answers: [
+    {text: "Raw fish", correct: false},
+    {text: "Seaweed roll", correct: false},
+    {text: "Vinegared rice", correct: true},
+    {text: "Fresh seafood", correct: false},
+  ]
+},
+
+
   {
     question: "What is Japanese miso soup's main ingredient?  ",
     answers: [
@@ -122,7 +146,7 @@ const questions = [
   {
     question: "What flower is used to symbolize the Seal of the Emperor? ",
     answers: [
-      {text: "Cherry blossoms", correct: false},
+      {text: "Cherry Blossoms", correct: false},
       {text: "Chrysanthemums", correct: true},
       {text: "Lotuses", correct: false},
       {text: "Orchids", correct: false},
@@ -140,7 +164,16 @@ const questions = [
   },
 
   {
-    question: "What indigenous group of people lived in the northern part of Japan that had their own distinct culture and language? ",
+    question: "What is a ryokan?",
+    answers: [
+      {text: "A type of Japanese tea", correct: false},
+      {text: "A Japanese garden", correct: false},
+      {text: "A traditional Japanese inn", correct: true},
+      {text: "A style of Japanese art", correct: false},
+    ]
+  },
+  {
+    question: "What indigenous group of people lived in the Northern part of Japan that had their own distinct culture and language? ",
     answers: [
       {text: "Jomon", correct: false},
       {text: "Ryukyu", correct: false},
@@ -148,7 +181,6 @@ const questions = [
       {text: "Ainu", correct: true},
     ]
   },
-
   {
     question: "What era marked when Japan began to modernize? ",
     answers: [
@@ -160,7 +192,7 @@ const questions = [
   },
 
   {
-    question: "Which of the following is a native religion that did not begin from mainland Asia? ",
+    question: "Which of the following is a native Japanese religion that did not begin from mainland Asia? ",
     answers: [
       {text: "Confucianism", correct: false},
       {text: "Shintoism", correct: true},
@@ -180,6 +212,26 @@ const questions = [
   },
 
   {
+    question: "During the Edo Period, which class was the lowest in rank?  ",
+    answers: [
+      {text: "Samurai", correct: false},
+      {text: "Peasant", correct: false},
+      {text: "Merchant", correct: true},
+      {text: "Artisan", correct: false},
+    ]
+  },
+
+  {
+    question: "What is Zaibatsu? ",
+    answers: [
+      {text: "A traditional Japanese tea ceremony", correct: false},
+      {text: "A type of Japanese martial art", correct: false},
+      {text: "A conglomerate of powerful family-controlled business groups in Japan", correct: true},
+      {text: "A festival celebrating cherry blossoms", correct: false},
+    ]
+  },
+
+  {
     question: "Which one of the following is not one of the three unifiers of Japan during the sengoku period?  ",
     answers: [
       {text: "Oda Nobunaga", correct: false},
@@ -190,12 +242,22 @@ const questions = [
   },
 
   {
+    question: "What is Japan's current Emperor's name?",
+    answers: [
+      {text: "Naruhito", correct: true},
+      {text: "Hirohito", correct: false},
+      {text: "Akihito", correct: false},
+      {text: "Taisho", correct: false},
+    ]
+  },
+
+  {
     question: "What is the philosophy of Wabi-Sabi?   ",
     answers: [
       {text: "The modern movement of focusing on futuristic designs with traditional aesthetics", correct: false},
       {text: "The importance of conformity and stability over individualism and uncertainty", correct: false},
       {text: "The concept of finding beauty in imperfection, impermanance, and acceptance of wear", correct: true},
-      {text: "The act of always doing things with full effort", correct: false},
+      {text: "The act of always doing things with full effort no matter how mundane", correct: false},
     ]
   },
 

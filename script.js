@@ -191,10 +191,10 @@ const questions = [
   {
     question: "What era marked when Japan began to modernize?",
     answers: [
-      {text: "Meiji", correct: true},
       {text: "Edo", correct: false},
       {text: "Kamakura", correct: false},
       {text: "Asuka", correct: false},
+      {text: "Meiji", correct: true},
     ]
   },
   {
@@ -254,10 +254,10 @@ const questions = [
   {
     question: "What is Japan's current Emperor's name?",
     answers: [
-      {text: "Naruhito", correct: true},
       {text: "Hirohito", correct: false},
       {text: "Akihito", correct: false},
       {text: "Taisho", correct: false},
+      {text: "Naruhito", correct: true},
     ]
   },
   {
